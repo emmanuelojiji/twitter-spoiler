@@ -17,11 +17,6 @@ body {
   position: relative;
 }
 
-svg {
-  height: 100% !important;
-  width: 100% !important;
-}
-
 .new-tweet-container {
   background-color: #1da1f3;
   border-radius: 1000px;
