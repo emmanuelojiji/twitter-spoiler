@@ -17,6 +17,10 @@ body {
   position: relative;
 }
 
+svg {
+  display: inline-block;
+}
+
 .new-tweet-container {
   background-color: #1da1f3;
   border-radius: 1000px;
