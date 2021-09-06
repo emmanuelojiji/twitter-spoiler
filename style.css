@@ -7,6 +7,13 @@
   outline: none;
 }
 
+a,
+button,
+i,
+svg {
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -40,8 +47,8 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  bottom: 60px;
-  right: 10px;
+  bottom: 70px;
+  right: 5%;
 }
 
 .new-tweet-container .new-tweet {
@@ -74,7 +81,7 @@ svg {
 }
 
 .write-tweet-container .write-tweet-header .left-arrow {
-  width: 24px;
+  width: 19px;
   fill: #526470;
 }
 
@@ -92,19 +99,39 @@ svg {
 
 .write-tweet-container textarea {
   resize: none;
-  height: 144px;
+  height: 118px;
+  max-height: 144px;
   width: 100%;
   border: 0;
+  font-size: 16px;
+}
+
+.write-tweet-container textarea::-webkit-input-placeholder {
+  font-size: 16px;
+}
+
+.write-tweet-container .write-tweet-icon-container {
+  padding-top: 18px;
+  border-top: solid 1px #f2f2f2;
+}
+
+.write-tweet-container .write-tweet-icon-container .write-tweet-icon {
+  width: 19px;
+  margin-right: 12px;
+  fill: #1da1f3;
 }
 
 .write-tweet-container .send-tweet {
-  min-height: 32px;
-  width: 60px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: #1da1f3;
   opacity: 0.5;
   border-radius: 1000px;
   border: 0;
   color: white;
+  font-weight: bold;
 }
 
 .write-tweet-container .reply-setting {
@@ -115,14 +142,21 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 1000px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
   border: 0;
   color: #1da1f3;
   font-weight: bold;
   background-color: transparent;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+.write-tweet-container .reply-setting:hover {
+  background-color: #f2f2f2;
 }
 
 .write-tweet-container .reply-setting .globe {
