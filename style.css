@@ -3,7 +3,8 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
+  outline: none;
 }
 
 body {
@@ -48,6 +49,64 @@ svg {
   width: 20px;
 }
 
+.write-tweet-container {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  /* display: none; */
+}
+
+.write-tweet-container .write-tweet-header {
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.write-tweet-container .write-tweet-header .left-arrow {
+  width: 24px;
+  fill: #526470;
+}
+
+.write-tweet-container .write-tweet-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.write-tweet-container .write-tweet-right {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.write-tweet-container textarea {
+  resize: none;
+  height: 144px;
+  width: 100%;
+  border: 0;
+}
+
+.write-tweet-container button {
+  min-height: 32px;
+  width: 60px;
+  background-color: #1da1f3;
+  opacity: 0.5;
+  border-radius: 1000px;
+  border: 0;
+  color: white;
+}
+
 /* Main Avatar*/
 .main-avatar {
   border-radius: 1000px;
@@ -67,7 +126,7 @@ svg {
 }
 
 /* Header */
-header {
+.feed-header {
   height: 45px;
   width: 100%;
   max-width: 100%;
@@ -87,7 +146,7 @@ header {
   border-bottom: 1px solid #d8dadb;
 }
 
-header .header-wrap {
+.feed-header .header-wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -124,7 +183,7 @@ header .header-wrap {
 
 /* Nav */
 nav {
-  height: 45px;
+  height: 55px;
   width: 100%;
   max-width: 450px;
   background-color: white;
@@ -282,7 +341,8 @@ nav {
   margin-top: 10px;
 }
 
-.tweet-link, .tweet-hashtag {
+.tweet-link,
+.tweet-hashtag {
   color: #1da1f3;
   cursor: pointer;
 }
@@ -297,6 +357,9 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: solid 1px #d8dadb;
   border-radius: 5px;
   padding: 10px;
@@ -306,6 +369,10 @@ nav {
 .warning-container .warning p {
   font-size: 0.8em;
   color: #526470;
+}
+
+.warning-container .warning .change-settings {
+  color: #1da1f3;
 }
 
 .warning-container .warning .view {
