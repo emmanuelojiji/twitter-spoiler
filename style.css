@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -302,6 +303,11 @@ nav {
   margin-bottom: 12px;
 }
 
+.warning-container .warning p {
+  font-size: 0.8em;
+  color: #526470;
+}
+
 .warning-container .warning .view {
   color: #1da1f3;
 }
@@ -322,6 +328,7 @@ nav {
 }
 
 .warning-container .flagged-container p {
-  color: #526470;
+  color: #d8dadb;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=style.css.map */
