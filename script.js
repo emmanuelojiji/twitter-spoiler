@@ -16,6 +16,7 @@ window.onload = () => {
 
   newTweetButton.onclick = () => {
     writeTweetContainer.style.display = "block";
+    tweetTextArea.focus();
   };
 
   leftArrow.onclick = () => {
