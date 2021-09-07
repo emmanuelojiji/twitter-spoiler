@@ -5,9 +5,9 @@ window.onload = () => {
   dots.onclick = () => {
     popup.style.display = "block";
 
-    setTimeout(() => {
+   /* setTimeout(() => {
       popup.style.maxHeight = "auto";
-    }, 1000);
+    }, 1000); */
   };
 
   const leftArrow = document.querySelector(".left-arrow");
