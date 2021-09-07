@@ -510,4 +510,52 @@ nav {
   color: #c2c4c5;
   font-size: 0.8em;
 }
+
+@-webkit-keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  0% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.75);
+            transform: scale(0.75);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.heartbeat {
+  -webkit-animation: heartbeat 1s;
+          animation: heartbeat 1s;
+  fill: #e02540;
+}
+
+.is-retweeted {
+  fill: #1acf83;
+}
 /*# sourceMappingURL=style.css.map */

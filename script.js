@@ -30,9 +30,28 @@ window.onload = () => {
     if (tweetTextArea.value.length >= -1) {
       sendTweetButton.style.opacity = "1";
       console.log("greater than 0");
-     } else if (tweetTextArea.value.length <= 0) {
+    } else if (tweetTextArea.value.length <= 0) {
       sendTweetButton.style.opacity = "0.5";
       console.log("0 or less");
-     }
+    }
+  };
+
+  const love = document.querySelector(".love");
+  const retweet = document.querySelector(".retweet");
+
+  love.onclick = () => {
+    if (love.classList.contains("heartbeat")) {
+      love.classList.remove("heartbeat");
+    } else {
+      love.classList.add("heartbeat");
+    }
+  };
+
+  retweet.onclick = () => {
+    if (retweet.classList.contains("is-retweeted")) {
+      retweet.classList.remove("is-retweeted");
+    } else {
+      retweet.classList.add("is-retweeted");
+    }
   };
 };
