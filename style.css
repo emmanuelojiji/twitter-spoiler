@@ -240,7 +240,7 @@ svg {
 
 .page {
   margin-left: 20px;
-  font-size: 0.9em;
+  font-size: 15px;
 }
 
 .stars {
@@ -478,7 +478,7 @@ nav {
 }
 
 .warning-container .warning p {
-  font-size: 0.8em;
+  font-size: 15px;
   color: #526470;
 }
 
