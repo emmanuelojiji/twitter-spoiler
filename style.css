@@ -432,15 +432,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 10px;
 }
 
 .icon-number-wrap {
   display: table-cell;
   color: #526470;
+  margin-right: 30px;
 }
 
 .icon-number-wrap svg {
