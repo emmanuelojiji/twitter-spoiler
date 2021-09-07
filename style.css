@@ -389,9 +389,9 @@ nav {
 
 .dots-popup-container .popup {
   background-color: white;
-  /*position: absolute;
-    right: 0;
-    top: 0;*/
+  position: absolute;
+  right: 0;
+  top: 0;
   width: 250px;
   display: none;
   /*height: 0px;*/
