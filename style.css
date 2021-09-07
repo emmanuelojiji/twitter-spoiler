@@ -487,8 +487,9 @@ nav {
 }
 
 .warning-container .warning .view {
-  color: #1da1f3;
+  color: #526470;
   margin-left: 10px;
+  font-weight: bold;
 }
 
 .warning-container .flagged-container {
