@@ -65,6 +65,7 @@ svg {
   background-color: white;
   padding-left: 5%;
   padding-right: 5%;
+  display: none;
   /* display: none; */
 }
 
@@ -222,6 +223,7 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border-bottom: 1px solid #d8dadb;
+  color: #0f1419;
 }
 
 .feed-header .header-wrap {
@@ -342,15 +344,22 @@ nav {
 .user-info .tweet-name {
   font-size: 0.8em;
   margin-right: 3px;
+  color: #0f1419;
 }
 
 .user-info .tweet-username {
   font-size: 0.8em;
-  margin-right: 5px;
+  color: #526470;
+}
+
+.user-info .middle-dot {
+  margin-left: 3px;
+  margin-right: 3px;
 }
 
 .user-info .time {
   font-size: 0.8em;
+  color: #526470;
 }
 
 .tweet-text {
@@ -455,6 +464,7 @@ nav {
 
 .warning-container .warning .view {
   color: #1da1f3;
+  margin-left: 10px;
 }
 
 .warning-container .flagged-container {
@@ -469,11 +479,11 @@ nav {
 .warning-container .flagged-container i {
   margin-right: 8px;
   font-size: 14px;
-  color: #d8dadb;
+  color: #c2c4c5;
 }
 
 .warning-container .flagged-container p {
-  color: #d8dadb;
+  color: #c2c4c5;
   font-size: 0.8em;
 }
 /*# sourceMappingURL=style.css.map */
