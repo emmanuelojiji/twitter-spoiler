@@ -1,5 +1,5 @@
 window.onload = () => {
-  const dots = document.querySelector(".dots");
+  const dots = document.querySelector(".dots-popup-container");
   const popup = document.querySelector(".popup");
 
   dots.onclick = () => {
