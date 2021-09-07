@@ -27,7 +27,8 @@ body {
 }
 
 svg {
-  height: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .new-tweet-container {
