@@ -439,6 +439,7 @@ nav {
 
 .icon-number-wrap svg {
   vertical-align: middle;
+  margin-right: 3px;
 }
 
 .icon-number-wrap .number {
