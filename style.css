@@ -13,11 +13,6 @@ button,
 i,
 svg {
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
 }
 
 body {
