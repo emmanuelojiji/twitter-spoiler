@@ -197,10 +197,10 @@ svg {
 /* Avatar Tweet */
 .tweet-avatar {
   border-radius: 1000px;
-  max-width: 38px;
-  min-width: 38px;
-  min-height: 38px;
-  max-height: 38px;
+  max-width: 46px;
+  min-width: 46px;
+  min-height: 46px;
+  max-height: 46px;
 }
 
 /* Header */
