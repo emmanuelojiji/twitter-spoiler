@@ -188,10 +188,10 @@ svg {
 /* Main Avatar*/
 .main-avatar {
   border-radius: 1000px;
-  max-width: 25px;
-  min-width: 25px;
-  min-height: 25px;
-  max-height: 25px;
+  max-width: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  max-height: 30px;
 }
 
 /* Avatar Tweet */
@@ -243,7 +243,7 @@ svg {
 }
 
 .stars {
-  width: 18px;
+  width: 20px;
 }
 
 .header-left {
@@ -341,13 +341,13 @@ nav {
 }
 
 .user-info .tweet-name {
-  font-size: 0.8em;
+  font-size: 14px;
   margin-right: 3px;
   color: #0f1419;
 }
 
 .user-info .tweet-username {
-  font-size: 0.8em;
+  font-size: 14px;
   color: #526470;
 }
 
@@ -357,7 +357,7 @@ nav {
 }
 
 .user-info .time {
-  font-size: 0.8em;
+  font-size: 14px;
   color: #526470;
 }
 
