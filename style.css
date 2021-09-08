@@ -226,6 +226,7 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #0f1419;
+  margin-top: 15px;
 }
 
 .feed-header .header-wrap {
