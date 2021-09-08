@@ -51,6 +51,8 @@ svg {
   position: fixed;
   bottom: 70px;
   right: 5%;
+  -webkit-box-shadow: 0 0.5px 4px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .new-tweet-container .new-tweet {
@@ -189,10 +191,10 @@ svg {
 /* Main Avatar*/
 .main-avatar {
   border-radius: 1000px;
-  max-width: 30px;
-  min-width: 30px;
-  min-height: 30px;
-  max-height: 30px;
+  max-width: 35px;
+  min-width: 35px;
+  min-height: 35px;
+  max-height: 35px;
 }
 
 /* Avatar Tweet */
@@ -383,7 +385,7 @@ nav {
 
 .dots-popup-container .dots {
   width: 18px;
-  fill: #526470;
+  fill: #d2d2d2;
 }
 
 .dots-popup-container .popup {
