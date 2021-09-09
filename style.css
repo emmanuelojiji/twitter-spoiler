@@ -335,17 +335,17 @@ svg {
 
 .spaces-container .spaces-wrap-left .user-1 {
   background-color: white;
-  background-image: url("/memoji-1.png");
+  background-image: url("memoji-1.png");
 }
 
 .spaces-container .spaces-wrap-left .user-2 {
   background-color: white;
-  background-image: url("/black-man.jpg");
+  background-image: url("black-man.jpg");
 }
 
 .spaces-container .spaces-wrap-right .user-1 {
   background-color: white;
-  background-image: url("/memoji-1.png");
+  background-image: url("memoji-1.png");
 }
 
 .spaces-container .space-number {
