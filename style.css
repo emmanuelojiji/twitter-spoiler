@@ -15,10 +15,20 @@ svg {
   cursor: pointer;
 }
 
-body {
+a {
+  text-decoration: none;
+  color: #1da1f3;
+}
+
+.hashtag, .mention {
+  color: #1da1f3;
+}
+
+body, html {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 .App {
@@ -64,7 +74,7 @@ svg {
   height: 100vh;
   position: fixed;
   width: 100%;
-  z-index: 500;
+  z-index: 5000;
   background-color: white;
   padding-left: 5%;
   padding-right: 5%;
@@ -86,11 +96,6 @@ svg {
   z-index: 6;
 }
 
-.write-tweet-container .write-tweet-header .left-arrow {
-  width: 19px;
-  fill: #526470;
-}
-
 .write-tweet-container .write-tweet-header-right {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,7 +108,7 @@ svg {
 .write-tweet-container .drafts {
   color: #1da1f3;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .write-tweet-container .write-tweet-wrap {
@@ -154,6 +159,7 @@ svg {
   border: 0;
   color: white;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .write-tweet-container .reply-setting {
@@ -164,7 +170,6 @@ svg {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 1000px;
-  padding-left: 12px;
   padding-right: 12px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -172,7 +177,7 @@ svg {
   border: 0;
   color: #1da1f3;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
   background-color: transparent;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
@@ -207,15 +212,17 @@ svg {
 }
 
 /* Header */
+.header-spaces-wrap {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
 .feed-header {
   z-index: 5;
-  height: 45px;
   width: 100%;
   max-width: 100%;
   background-color: white;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -226,8 +233,6 @@ svg {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: #0f1419;
-  margin-top: 15px;
-  margin-bottom: 5px;
 }
 
 .feed-header .header-wrap {
@@ -240,6 +245,8 @@ svg {
           justify-content: space-between;
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .page {
@@ -263,6 +270,164 @@ svg {
 .header-left .page {
   margin-left: 30px;
   font-weight: bold;
+}
+
+.spaces-wrap {
+  text-align: center;
+  margin-bottom: 6px;
+  margin-right: 10px;
+}
+
+.spaces-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5%;
+  position: relative;
+  top: -1px;
+  overflow-x: scroll;
+  background: white;
+  z-index: 4000;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.spaces-container::-webkit-scrollbar {
+  display: none;
+}
+
+.spaces-container .user-space-container {
+  border-radius: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(#4a48eb), color-stop(35%, #5e50e9), to(#885de9));
+  background: linear-gradient(90deg, #4a48eb 0%, #5e50e9 35%, #885de9 100%);
+  padding: 5px;
+  position: relative;
+  -webkit-transform: scale(0.95) !important;
+          transform: scale(0.95) !important;
+}
+
+.spaces-container .user {
+  height: 50px;
+  width: 50px;
+  border-radius: 500px;
+  border: solid 3px white;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  right: 10px;
+}
+
+.spaces-container .user:nth-child(1) {
+  position: static;
+}
+
+.spaces-container .spaces-wrap-left .user-1 {
+  background-color: white;
+  background-image: url("/memoji-1.png");
+}
+
+.spaces-container .spaces-wrap-left .user-2 {
+  background-color: white;
+  background-image: url("/black-man.jpg");
+}
+
+.spaces-container .spaces-wrap-right .user-1 {
+  background-color: white;
+  background-image: url("/memoji-1.png");
+}
+
+.spaces-container .space-number {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.spaces-container .space-title {
+  margin-top: 6px;
+  font-size: 13px;
+}
+
+.flash-1-container {
+  background-color: #5947fd;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  padding: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: flash-1 1.5s linear infinite;
+          animation: flash-1 1.5s linear infinite;
+}
+
+.flash-2-container {
+  background-color: #5947fd;
+  width: 100%;
+  height: 100%;
+  border-radius: 500px;
+  padding: 0.1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: flash-1 1.5s linear infinite;
+          animation: flash-1 1.5s linear infinite;
+}
+
+@-webkit-keyframes flash-1 {
+  0% {
+    background-color: rgba(89, 71, 253, 0.5);
+  }
+  25% {
+    background-color: rgba(89, 71, 253, 0.3);
+  }
+  50% {
+    background-color: rgba(89, 71, 253, 0.25);
+  }
+  100% {
+    background-color: rgba(89, 71, 253, 0);
+  }
+}
+
+@keyframes flash-1 {
+  0% {
+    background-color: rgba(89, 71, 253, 0.5);
+  }
+  25% {
+    background-color: rgba(89, 71, 253, 0.3);
+  }
+  50% {
+    background-color: rgba(89, 71, 253, 0.25);
+  }
+  100% {
+    background-color: rgba(89, 71, 253, 0);
+  }
 }
 
 /* Feed */
@@ -314,6 +479,7 @@ nav {
   padding-left: 5%;
   padding-right: 5%;
   border-bottom: solid 1px #f1f1f1;
+  z-index: -1;
 }
 
 .tweet-container-right {
@@ -349,7 +515,6 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 8px;
 }
 
 .user-info .tweet-name {
@@ -403,6 +568,8 @@ nav {
   -webkit-box-shadow: 0 0.5px 4px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0.5px 4px 0 rgba(0, 0, 0, 0.2);
   padding-top: 14px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .dots-popup-container .popup .popup-option {
@@ -421,6 +588,7 @@ nav {
   margin-left: 10px;
   margin-right: 10px;
   fill: #526470;
+  color: #526470;
 }
 
 .rollout {
@@ -461,7 +629,11 @@ nav {
 }
 
 /* Warning */
-.warning-container .warning {
+.flagged-as-container {
+  display: none;
+}
+
+.warning-container .warning, .flagged-as-container .warning {
   max-width: 100%;
   background-color: #f6f7f9;
   display: -webkit-box;
@@ -479,22 +651,22 @@ nav {
   margin-bottom: 12px;
 }
 
-.warning-container .warning p {
+.warning-container .warning p, .flagged-as-container .warning p {
   font-size: 15px;
   color: #526470;
 }
 
-.warning-container .warning .change-settings {
+.warning-container .warning .change-settings, .flagged-as-container .warning .change-settings {
   color: #1da1f3;
 }
 
-.warning-container .warning .view {
+.warning-container .warning .view, .flagged-as-container .warning .view {
   color: #526470;
-  margin-left: 10px;
+  margin-left: 15px;
   font-weight: bold;
 }
 
-.warning-container .flagged-container {
+.warning-container .flagged-container, .flagged-as-container .flagged-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -503,15 +675,40 @@ nav {
           align-items: center;
 }
 
-.warning-container .flagged-container i {
+.warning-container .flagged-container i, .flagged-as-container .flagged-container i {
   margin-right: 8px;
   font-size: 14px;
   color: #c2c4c5;
 }
 
-.warning-container .flagged-container p {
+.warning-container .flagged-container p, .flagged-as-container .flagged-container p {
   color: #c2c4c5;
   font-size: 0.8em;
+}
+
+.revealed-tweet-container {
+  display: none;
+  opacity: 0;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.revealed-tweet-container p {
+  margin-bottom: 5px;
+}
+
+.revealed-tweet-container .tweet-image-container {
+  width: 100%;
+}
+
+.revealed-tweet-container .tweet-image-container img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.revealed-tweet-others {
+  display: block !important;
+  opacity: 1;
 }
 
 @-webkit-keyframes heartbeat {
