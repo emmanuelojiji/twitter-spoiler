@@ -77,24 +77,32 @@ window.onload = () => {
     }
   };
 
-  const love = document.querySelector(".love");
-  const retweet = document.querySelector(".retweet");
+  const love = document.querySelectorAll(".love");
+  const retweet = document.querySelectorAll(".retweet");
 
-  love.onclick = () => {
-    if (love.classList.contains("heartbeat")) {
-      love.classList.remove("heartbeat");
+  for (let index = 0; index < love.length; index++) {
+    love[index].onclick = () => {
+      if (love[index].classList.contains("heartbeat")) {
+        love[index].classList.remove("heartbeat");
+      } else {
+        love[index].classList.add("heartbeat");
+      }
+    };
+    
+  }
+
+ 
+for (let index = 0; index < retweet.length; index++) {
+  retweet[index].onclick = () => {
+    if (retweet[index].classList.contains("is-retweeted")) {
+      retweet[index].classList.remove("is-retweeted");
     } else {
-      love.classList.add("heartbeat");
+      retweet[index].classList.add("is-retweeted");
     }
   };
-
-  retweet.onclick = () => {
-    if (retweet.classList.contains("is-retweeted")) {
-      retweet.classList.remove("is-retweeted");
-    } else {
-      retweet.classList.add("is-retweeted");
-    }
-  };
+  
+}
+ 
 
 
 
